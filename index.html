@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Generate a random string</h1>
+    <div class="generator">
+        <input type="text" readonly id="first-password" onclick="copyFirst()">
+        <input type="text" readonly id="second-password" onclick="copySecond()">
+        <button onclick="generate()">Generate</button>
+        <button onclick="clearInput()">Clear fields</button>
+    </div>
+    <div class="options">
+        <label for="set-length">Set length</label>
+        <input type="number" id="set-length" name="set-length" min="1">
+        <label for="toggle">Toggle symbols and numbers off</label>
+        <input type="checkbox" id="toggle" name="toggle">
+    </div>
+    <div class="instruct">
+        <h2>Instructions</h2>
+        <ul>
+            <li>Set desired length of string (must be set)</li>
+            <li>Toggle numbers and symbols on or off (optional)</li>
+            <li>Click "Generate" to generate a random string</li>
+            <li>Click the text box to copy to clipboard</li>
+            <li>Press "Clear fields" to clear the generated strings</li>
+        </ul>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>

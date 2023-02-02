@@ -1,0 +1,53 @@
+body {
+    background-color: #1c1c1c;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgreen;
+}
+
+.generator {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.options {
+    margin-top: 3em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+button {
+    border-style: none;
+    background: lightgreen;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+input {
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+    background-color: lightslategrey;
+    border: none;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.instruct {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:focus {
+    box-shadow: 3px 3px green;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    appearance: none;
+}
